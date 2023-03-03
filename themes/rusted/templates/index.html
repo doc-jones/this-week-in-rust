@@ -4,7 +4,7 @@
 <div class="row">
   <div class="col-md-12 text-center">
     <h1 class="pitch">Handpicked Rust updates, <br /> delivered to your inbox.</h1>
-    <p class="subtext">Stay up to date with events, learning resources, and recent developments in Rust community.</p>
+    <p class="subtext">Stay up to date with events, learning resources, and recent developments in the Rust community.</p>
   </div>
 </div>
 {% include "_subscribe-form.html" %}
@@ -25,6 +25,23 @@
       <li class="text-right">
         <a href="{{ SITEURL }}/blog/archives/index.html">View more &rarr;</a>
       </li>
+    </ul>
+  </div>
+  <div class ="col-md-12">
+    <ul class="list-unstyled search">
+      <li class="nav-header disabled"><h2>Search</h2></li>
+      <div>
+        <p class="subtext">Generic or unspecific search terms may result in unhelpful results - there is currently no exact matching on phrases.</p>
+        <input data-stork="sitesearch" class="form-control"/>
+        <div data-stork="sitesearch-output"></div>
+
+        <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/stork.js"></script>
+        <script>
+          stork.initialize("{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/stork.wasm")
+          stork.downloadIndex("sitesearch", "{{ SITEURL }}/search-index.st")
+          stork.attach("sitesearch")
+        </script>
+      </div>
     </ul>
   </div>
 </div>

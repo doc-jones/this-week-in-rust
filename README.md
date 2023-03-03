@@ -18,6 +18,7 @@ license](http://mit-license.org/).
 * [kolharsam](https://github.com/kolharsam)
 * [joelmarcey](https://github.com/joelmarcey)
 * [mariannegoldin](https://github.com/mariannegoldin)
+* [bennyvasquez](https://github.com/bennyvasquez)
 
 ### Language Reviewers
 
@@ -59,9 +60,24 @@ What we are generally NOT looking for includes:
 * Anything that violates the [Rust Community Code of Conduct](https://www.rust-lang.org/policies/code-of-conduct)
 * Rants or anything degrading to any part or member of the Community. Rather than submitting an article about what is wrong with something, we would much rather you write something that explains how you'd make it better.
 * Duplicates of recent posts (even with the wording changed slightly)
-* Links to crates or GitHub repos without some sort of context. We would much rather you submit a blog post introducing your project and how a Rust user might use it (and what it would help them do) and/or what you learned about Rust in the process of writing the project.
 * Anything behind a paywall (this includes Medium's paid article / members-only mechanism)
 * Anything that requires information to be shared/captured (like an email address) in order to access
+
+**Projects/Tooling Updates**
+
+There are further guidelines for the Projects/Tooling Updates Section
+
+We include:
+* Updates on tooling when in long form or framed as a tutorial (this can be through a blog, through GitHub, through a newsletter, and more) - it must have a high amount of Rust specific info (examples in Rust, notes on things learned about Rust in the process of creating/updating the project, etc.)
+* Updates on tooling that call out specific contributors - it is wonderful to highlight all the great people contributing to Rust OSS projects (Note - the update still must include a high amount of Rust specific info)
+* Changelogs of projects (though we strongly prefer the changelogs be accompanied with details on the changes, guides to using the changes, etc.)
+
+We do not include:
+* Links that are solely to a GitHub repo or crate on crates.io. While we would love to include these, there are too many being created/updated every week for us to include them all. We encourage you to write up an introduction to your project with examples, information you learned through creating the project, changes you recently made to the project, etc.
+
+Notes:
+* A small description of the project or the update in your link is encouraged (for example: FooBar 1.0: adding support for Baz)
+* We discourage submitting links and link descriptions that are solely of a commercial/sales nature
 
 These are meant to be guidelines, if you are ever not sure about whether something should be included please feel free to open a pull request anyway and we can discuss it!
 

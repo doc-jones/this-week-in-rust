@@ -83,6 +83,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+/**
+ * Anchor links
+ */
+a.toclink, a.toclink:visited {
+    color: $text-color;
+}
+
 
 /**
  * Links
@@ -92,7 +99,7 @@ a {
     text-decoration: none;
 
     &:visited {
-        color: darken($brand-color, 15%);
+        color: $brand-color-visited;
     }
 
     &:hover {
@@ -126,23 +133,47 @@ blockquote {
 pre,
 code {
     font-size: 15px;
-    border: 1px solid $grey-colour-light;
+    border: 1px solid $code-border-color;
     border-radius: 3px;
-    background-color: #eef;
+    background-color: $code-bg-color;
 }
 
 code {
     padding: 1px 5px;
+    color: $code-color;
 }
 
 pre {
     padding: 8px 12px;
     overflow-x: scroll;
+    color: $pre-color;
 
     > code {
         border: 0;
         padding-right: 0;
         padding-left: 0;
+    }
+}
+
+
+/**
+ * Tables
+ */
+table {
+    border-collapse: collapse;
+    margin: 1em 0;
+
+    td, th {
+        border: 1px solid $table-lines-color;
+        padding: 2px 8px;
+    }
+
+    th {
+        background-color: $thead-color;
+    }
+
+    tr:nth-child(even) td {
+        background-color: $table-even-color;
     }
 }
 
