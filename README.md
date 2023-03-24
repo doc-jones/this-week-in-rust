@@ -1,63 +1,52 @@
-This Week in Rust
+This Week in GraphQL
 =================
 
-Content for [this-week-in-rust.org](http://this-week-in-rust.org). Made available under CC-BY-SA.
+Content for [this-week-in-graphql.org](http://this-week-in-graphql.org). Made available under CC-BY-SA.
 
 All code Copyright 2014 Ember Arlynx, made available under [the MIT
 license](http://mit-license.org/).
 
 ## TWiR Editors
 
-* [nellshamrell](https://github.com/nellshamrell)
-* [llogiq](https://github.com/llogiq)
-* [cdmistman](https://github.com/cdmistman)
-* [ericseppanen](https://github.com/ericseppanen)
-* [extrawurst](https://github.com/extrawurst)
-* [andrewpollack](https://github.com/andrewpollack)
-* [U007D](https://github.com/U007D) 
-* [kolharsam](https://github.com/kolharsam)
-* [joelmarcey](https://github.com/joelmarcey)
-* [mariannegoldin](https://github.com/mariannegoldin)
-* [bennyvasquez](https://github.com/bennyvasquez)
+* [doc-jones](https://github.com/doc-jones)
+* [TBD](https://google.com)
+* [TBD](https://google.com)
+
 
 ### Language Reviewers
 
-* [yuk1ty](https://github.com/yuk1ty) - Japanese
-* [rpruizc](https://github.com/rpruizc) - Spanish
-* [matheus-consoli](https://github.com/matheus-consoli) - Portuguese
-* [MATRIXKOO](https://github.com/MATRIXKOO) - Chinese
-* [Folyd](https://github.com/Folyd) - Chinese
+* We are looking for contributors to help translate the newsletter into other languages: Spanish, Japanese, German, Portuguese, and Chinese and more. Reach out the editors if you would like to contribute a translation.
 
 ## PRs for next issue are now being accepted
 
 To propose content for inclusion in the next newsletter (found in the `drafts/`
-folder), create a new [Pull Request](https://github.com/rust-lang/this-week-in-rust/pulls) updating the relevant section in the 
+folder), create a new [Pull Request](https://github.com/doc-jones/TWiG/pulls) updating the relevant section in the 
 draft.
 
-Alternately, tweet us [@thisweekinrust](https://twitter.com/thisweekinrust).
+Alternately, tweet us [@graphql](https://twitter.com/graphql).
 
-### What do we look for when considering whether to include something in This Week in Rust?
+### What do we look for when considering whether to include something in This Week in GraphQL?
 
-This Week in Rust is intended to highlight the incredible work of the Rust Community. 
+This Week in GraphQL is intended to highlight the incredible work of the GraphQL Community. 
 
 What we are generally looking for includes:
 
-* how-to intros (and advanced deep dives) into Rust concepts and areas
-* Rust walkthroughs that explain concepts in different ways than well known resources like [the Rust book](https://doc.rust-lang.org/stable/book/), [Rustlings](https://github.com/rust-lang/rustlings), and [Rust by Example](https://doc.rust-lang.org/stable/rust-by-example/)
+* how-to intros (and advanced deep dives) into GraphQL concepts and areas
+* GraphQL walkthroughs that explain concepts in different ways than well known resources like [GraphQL documentation](https://doc.rust-lang.org/stable/book/), [GraphQL Concepts](https://github.com/rust-lang/rustlings), and [GraphQL by Example](https://doc.rust-lang.org/stable/rust-by-example/)
 * updates on tooling when in long form or framed as a tutorial (for more details, see what we are not looking for below)
-* Rust-related podcast episodes
-* Rust-related screenshots and videos
-* Rust meetup recordings
-* Rust meetup announcements
-* Presenter slide decks on Rust
-* Observations and thoughts on Rust and the Rust community
-* Calls for participation in Rust open source projects
-* Rust job announcements
+* GraphQL-related podcast episodes
+* GraphQL-related screenshots and videos
+* GraphQL meetup recordings
+* GraphQL meetup announcements
+* Presenter slide decks on GraphQL
+* Observations and thoughts on GraphQL and the GraphQL community
+* Calls for participation in GraphQL open source projects
+* GraphQL job announcements
 * and more!
 
 What we are generally NOT looking for includes:
 
-* Anything that violates the [Rust Community Code of Conduct](https://www.rust-lang.org/policies/code-of-conduct)
+* Anything that violates the [GraphQL Community Code of Conduct](https://www.rust-lang.org/policies/code-of-conduct)
 * Rants or anything degrading to any part or member of the Community. Rather than submitting an article about what is wrong with something, we would much rather you write something that explains how you'd make it better.
 * Duplicates of recent posts (even with the wording changed slightly)
 * Anything behind a paywall (this includes Medium's paid article / members-only mechanism)
@@ -68,12 +57,12 @@ What we are generally NOT looking for includes:
 There are further guidelines for the Projects/Tooling Updates Section
 
 We include:
-* Updates on tooling when in long form or framed as a tutorial (this can be through a blog, through GitHub, through a newsletter, and more) - it must have a high amount of Rust specific info (examples in Rust, notes on things learned about Rust in the process of creating/updating the project, etc.)
-* Updates on tooling that call out specific contributors - it is wonderful to highlight all the great people contributing to Rust OSS projects (Note - the update still must include a high amount of Rust specific info)
+* Updates on tooling when in long form or framed as a tutorial (this can be through a blog, through GitHub, through a newsletter, and more) - it must have a high amount of GraphQL specific info (examples in GraphQL, notes on things learned about GraphQL in the process of creating/updating the project, etc.)
+* Updates on tooling that call out specific contributors - it is wonderful to highlight all the great people contributing to GraphQL OSS projects (Note - the update still must include a high amount of GraphQL specific info)
 * Changelogs of projects (though we strongly prefer the changelogs be accompanied with details on the changes, guides to using the changes, etc.)
 
 We do not include:
-* Links that are solely to a GitHub repo or crate on crates.io. While we would love to include these, there are too many being created/updated every week for us to include them all. We encourage you to write up an introduction to your project with examples, information you learned through creating the project, changes you recently made to the project, etc.
+* Links that are solely to a GitHub repo or package on npm, pypi or the like. While we would love to include these, there are too many being created/updated every week for us to include them all. We encourage you to write up an introduction to your project with examples, information you learned through creating the project, changes you recently made to the project, etc.
 
 Notes:
 * A small description of the project or the update in your link is encouraged (for example: FooBar 1.0: adding support for Baz)
@@ -81,7 +70,7 @@ Notes:
 
 These are meant to be guidelines, if you are ever not sure about whether something should be included please feel free to open a pull request anyway and we can discuss it!
 
-The editors of This Week in Rust do reserve the right to make the decision about whether to include something or not, but we intend to do so in a way that is as transparent as possible.
+The editors of This Week in GraphQL do reserve the right to make the decision about whether to include something or not, but we intend to do so in a way that is as transparent as possible.
 
 ## Link style guidelines:
 
@@ -100,18 +89,18 @@ Some prefixes are used, and should be placed to the left of the link.
 ## Community sub-categories
 
 Editors will sort community links into sub-categories. The following sub-categories are currently used:
-- **Official** -- rust-lang.org blog posts and other official Rust team communications.
+- **Official** -- rust-lang.org blog posts and other official GraphQL team communications.
 - **Foundation** -- foundation.rust-lang.org blog posts and other official foundation communications.
-- **Project/Tooling Updates** -- News about the progress of a Rust project. Must be more informative than just a changelog.
-- **Newsletters** -- Regularly scheduled articles about an area of Rust development, e.g. posts titled "This Month in ___".
-- **Research** -- Academic Papers that are about Rust or contain significant Rust content.
-- **Observations/Thoughts** -- Articles about Rust.
-- **Rust Walkthroughs** -- Articles that include a significant amount of Rust source code, that walk the reader through building something.
+- **Project/Tooling Updates** -- News about the progress of a GraphQL project. Must be more informative than just a changelog.
+- **Newsletters** -- Regularly scheduled articles about an area of GraphQL development, e.g. posts titled "This Month in ___".
+- **Research** -- Academic Papers that are about GraphQL or contain significant GraphQL content.
+- **Observations/Thoughts** -- Articles about GraphQL.
+- **GraphQL Walkthroughs** -- Articles that include a significant amount of GraphQL source code, that walk the reader through building something.
 - **Miscellaneous** -- Links that don't clearly fit in other sub-categories.
 
-Most blog posts about Rust belong in **Rust Walkthroughs** if they show how something is done (including source code), otherwise **Observations/Thoughts**. Articles that don't contain much Rust content, or news articles that mention Rust, won't always be accepted, but when they are they can be placed in the **Miscellaneous** sub-category.
+Most blog posts about GraphQL belong in **GraphQL Walkthroughs** if they show how something is done (including source code), otherwise **Observations/Thoughts**. Articles that don't contain much GraphQL content, or news articles that mention GraphQL, won't always be accepted, but when they are they can be placed in the **Miscellaneous** sub-category.
 
-If a set of related links is published (e.g. from a large Rust conference), the editors may choose to invent a new category just for that issue.
+If a set of related links is published (e.g. from a large GraphQL conference), the editors may choose to invent a new category just for that issue.
 
 ## How I get PR lists:
 
@@ -120,7 +109,7 @@ git log --author=bors --since='MM/DD/YYYY 12:00PM' --until='MM/DD/YYYY 12:00PM' 
 # edit in vim to get rid of everything but PR number, copy into clipboard
 for pr in $(xsel -ob); do firefox https://github.com/mozilla/rust/pull/$pr; sleep 0.07; done
 # wait a long time...
-# write TWIR
+# write TWiG
 ```
 
 Alternatively use GitHub search:

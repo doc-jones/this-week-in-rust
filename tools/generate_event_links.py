@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-Generates `meetup.com` URLs for the upcoming TWiR
+Generates `meetup.com` URLs for the upcoming TWiG
 """
 import datetime
 
@@ -16,7 +16,7 @@ EVENT_TYPES = [
     "inPerson"
 ]
 KEYWORDS = [
-    "Rust"
+    "GraphQL"
 ]
 LOCATIONS = [
     "us--tx--Dallas",
