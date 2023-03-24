@@ -6,7 +6,7 @@ Content for [this-week-in-graphql.org](http://this-week-in-graphql.org). Made av
 All code Copyright 2014 Ember Arlynx, made available under [the MIT
 license](http://mit-license.org/).
 
-## TWiR Editors
+## TWiG Editors
 
 * [doc-jones](https://github.com/doc-jones)
 * [TBD](https://google.com)
