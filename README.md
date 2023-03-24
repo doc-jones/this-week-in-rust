@@ -32,7 +32,7 @@ This Week in GraphQL is intended to highlight the incredible work of the GraphQL
 What we are generally looking for includes:
 
 * how-to intros (and advanced deep dives) into GraphQL concepts and areas
-* GraphQL walkthroughs that explain concepts in different ways than well known resources like [GraphQL documentation](https://doc.rust-lang.org/stable/book/), [GraphQL Concepts](https://github.com/rust-lang/rustlings), and [GraphQL by Example](https://doc.rust-lang.org/stable/rust-by-example/)
+* GraphQL walkthroughs that explain concepts in different ways than well known resources like [GraphQL documentation](https://graphql.org), [GraphQL Concepts](https://learning.postman.com/open-technologies/specifications/graphql/concepts/), and [GraphQL by Example](https://google.com)
 * updates on tooling when in long form or framed as a tutorial (for more details, see what we are not looking for below)
 * GraphQL-related podcast episodes
 * GraphQL-related screenshots and videos
