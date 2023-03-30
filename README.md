@@ -9,7 +9,7 @@ license](http://mit-license.org/).
 ## TWiG Editors
 
 * [doc-jones](https://github.com/doc-jones)
-* [TBD](https://google.com)
+* [vanriper](https://github.com/vanriper)
 * [TBD](https://google.com)
 
 
