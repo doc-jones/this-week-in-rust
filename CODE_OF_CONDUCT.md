@@ -1,1 +1,1 @@
-All contributors are expected to follow the [Rust Community Code of Conduct](https://www.rust-lang.org/policies/code-of-conduct).
+All contributors are expected to follow the [GraphQL Community Code of Conduct](https://graphql.org/codeofconduct/).
