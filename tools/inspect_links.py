@@ -41,7 +41,7 @@ class Warnings:
 warnings = Warnings()
 
 # A regex that matches filenames to inspect.
-RE_FILENAME = re.compile(r'\d\d\d\d-\d\d-\d\d-this-week-in-rust.md$')
+RE_FILENAME = re.compile(r'\d\d\d\d-\d\d-\d\d-this-week-in-graphql.md$')
 
 # A block-list of tracking parameters
 TRACKING_PARAMETERS = set([
@@ -53,7 +53,7 @@ TRACKING_PARAMETERS = set([
 
 # A list of section titles that will trigger duplicate-tag detection.
 STRICT_TITLES = [
-    'updates from rust community',
+    'updates from GraphQL community',
 ]
 
 
@@ -220,7 +220,7 @@ def inspect_file(filename):
 def get_recent_files(dirs, count):
     """ return a list of the N most recent markdown files in `dir`.
 
-    We assume the files are named "YYYY-MM-DD-this-week-in-rust-md".
+    We assume the files are named "YYYY-MM-DD-this-week-in-graphql-md".
     """
     LOG.debug(f'searching for {count} recent files in "{dirs}"')
 

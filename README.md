@@ -46,7 +46,7 @@ What we are generally looking for includes:
 
 What we are generally NOT looking for includes:
 
-* Anything that violates the [GraphQL Community Code of Conduct](https://www.rust-lang.org/policies/code-of-conduct)
+* Anything that violates the [GraphQL Community Code of Conduct](https://graphql.org/codeofconduct/)
 * Rants or anything degrading to any part or member of the Community. Rather than submitting an article about what is wrong with something, we would much rather you write something that explains how you'd make it better.
 * Duplicates of recent posts (even with the wording changed slightly)
 * Anything behind a paywall (this includes Medium's paid article / members-only mechanism)
@@ -89,7 +89,7 @@ Some prefixes are used, and should be placed to the left of the link.
 ## Community sub-categories
 
 Editors will sort community links into sub-categories. The following sub-categories are currently used:
-- **Official** -- rust-lang.org blog posts and other official GraphQL team communications.
+- **Official** -- GraphQL blog posts and other official GraphQL team communications.
 - **Foundation** -- foundation.rust-lang.org blog posts and other official foundation communications.
 - **Project/Tooling Updates** -- News about the progress of a GraphQL project. Must be more informative than just a changelog.
 - **Newsletters** -- Regularly scheduled articles about an area of GraphQL development, e.g. posts titled "This Month in ___".

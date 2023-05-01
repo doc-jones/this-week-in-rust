@@ -8,10 +8,10 @@ TESTING_LOCALLY = False
 USE_EMAIL_THEME = True if os.environ.get('USE_EMAIL_THEME') == '1' else False
 
 AUTHOR = u'TWiR Contributors'
-SITENAME = u"This Week in Rust"
-SITEURL = 'https://this-week-in-rust.org' if not TESTING_LOCALLY else 'http://localhost:8000'
+SITENAME = u"This Week in GraphQL"
+SITEURL = 'https://this-week-in-graphql.org' if not TESTING_LOCALLY else 'http://localhost:8000'
 
-SOURCE_URL = 'https://github.com/rust-lang/this-week-in-rust'
+SOURCE_URL = 'https://github.com/doc-jones/this-week-in-graphql'
 
 if USE_EMAIL_THEME:
     THEME = 'themes/newsletter'
@@ -43,9 +43,9 @@ CATEGORY_URL = 'categories/{slug}/'
 CATEGORY_SAVE_AS = 'categories/{slug}/index.html'
 
 LANDING_PAGE_ABOUT = {
-        "title": "Cataloging the Rust community's awesomeness",
+        "title": "Cataloging the GraphQL community's awesomeness",
         "details": """
-A weekly newsletter about Rust and the Rust community, with bonus content
+A weekly newsletter about GraphQL and the GraphQL community, with bonus content
 scattered about.
 """
 }
