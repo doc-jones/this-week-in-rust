@@ -19,7 +19,9 @@ def iter_neighbors(seq):
     """Yields Neighbors for every article."""
     iterator = iter(seq)
     nxt = None
-    current = next(iterator)
+    current = next(iterator, None)
+    if current is None:
+        return
     for previous in iterator:
         yield Neighbors(next=nxt, current=current, previous=previous)
         nxt, current = current, previous
