@@ -42,6 +42,15 @@ ARCHIVES_SAVE_AS = 'blog/archives/index.html'
 CATEGORY_URL = 'categories/{slug}/'
 CATEGORY_SAVE_AS = 'categories/{slug}/index.html'
 
+# TODO: REPLACEME
+LOGO_32_URL = "https://this-week-in-rust.org/images/logo32.png"
+FAVICON_32_URL = "https://www.rust-lang.org/static/images/favicon-32x32.png"
+FAVICON_SVG_URL = "https://www.rust-lang.org/static/images/favicon.svg"
+SAFARI_PINNED_TAB_URL = "https://www.rust-lang.org/static/images/safari-pinned-tab.svg"
+FORM_SUBSCRIBE_URL = "//this-week-in-rust.us11.list-manage.com/subscribe/post?u=fd84c1c757e02889a9b08d289&amp;id=0ed8b72485"
+TWITTER_USERNAME = "ThisWeekInRust"
+PRIVACY_POLICY_URL = "https://this-week-in-graphql.org/pages/privacy-policy.html"
+
 LANDING_PAGE_ABOUT = {
         "title": "Cataloging the GraphQL community's awesomeness",
         "details": """
