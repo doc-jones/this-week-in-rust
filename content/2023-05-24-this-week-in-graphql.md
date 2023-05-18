@@ -75,4 +75,4 @@ GraphQL Events between 2023-05-24 - 2023-06-21
 
 <!-- QOTW goes here -->
 
-*This Week in Rust is edited by: [Doc Jones](https://github.com/doc-jones).*
+*This Week in GraphQL is edited by: [Doc Jones](https://github.com/doc-jones).*
