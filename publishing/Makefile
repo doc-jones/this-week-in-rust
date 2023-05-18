@@ -77,7 +77,7 @@ optimize-email:
 	rm -rf juice
 	mkdir juice
 	curl ${BLOG_DOWNLOAD} > juice/in.html
-	docker run \
+	docker run --rm \
 		-v $(shell pwd)/juice:/usr/src/myapp/juice \
 		twig:latest \
 		bash create_html_friendly_page.sh
