@@ -1,6 +1,6 @@
-Title: This Week in GraphQL $twir_issue_number
-Number: $twir_issue_number
-Date: $twir_issue_date
+Title: This Week in GraphQL $twig_issue_number
+Number: $twig_issue_number
+Date: $twig_issue_date
 Category: This Week in GraphQL
 
 Hello and welcome to another issue of *This Week in GraphQL*!
@@ -67,9 +67,9 @@ Some of these tasks may also have mentors available, visit the task page for mor
 
 ## Upcoming Events
 
-GraphQL Events between $twir_issue_date - $twir_events_end_date
+GraphQL Events between $twig_issue_date - $twig_events_end_date
 
-$twir_events_list
+$twig_events_list
 
 # Quote of the Week
 

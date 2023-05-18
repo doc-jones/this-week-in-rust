@@ -46,28 +46,28 @@ email-workflow-1: build clean generate-email host-content
 email-workflow-2: optimize-email
 
 build:
-	cd .. && docker build -t twir -f publishing/Dockerfile . && cd -
+	cd .. && docker build -t twig -f publishing/Dockerfile . && cd -
 
 clean:
 	rm -rf output/
 
 generate-website: clean
 	docker run -it \
-		-v $(shell pwd)/output:/usr/twir/output \
-		twir:latest 
+		-v $(shell pwd)/output:/usr/twig/output \
+		twig:latest 
 
 generate-email: clean
 	docker run -it \
 		-e USE_EMAIL_THEME=1 \
-		-v $(shell pwd)/output:/usr/twir/output \
-		twir:latest
+		-v $(shell pwd)/output:/usr/twig/output \
+		twig:latest
 
 host-content:
 	docker run -it \
 		-p 8000:8000 \
-	 	-v $(shell pwd)/output:/usr/twir/output:ro \
+	 	-v $(shell pwd)/output:/usr/twig/output:ro \
 		-it \
-		twir:latest \
+		twig:latest \
 		bash run_server.sh
 
 optimize-email:
@@ -76,6 +76,6 @@ optimize-email:
 	mkdir juice
 	curl ${BLOG_DOWNLOAD} > juice/in.html
 	docker run \
-		-v $(shell pwd)/juice:/usr/twir/juice \
-		twir:latest \
+		-v $(shell pwd)/juice:/usr/twig/juice \
+		twig:latest \
 		bash create_html_friendly_page.sh

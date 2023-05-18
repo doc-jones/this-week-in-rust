@@ -105,7 +105,7 @@ If a set of related links is published (e.g. from a large GraphQL conference), t
 ## How I get PR lists:
 
 ```
-git log --author=bors --since='MM/DD/YYYY 12:00PM' --until='MM/DD/YYYY 12:00PM' --pretty=oneline > ~/entropy/twir.txt
+git log --author=bors --since='MM/DD/YYYY 12:00PM' --until='MM/DD/YYYY 12:00PM' --pretty=oneline > ~/entropy/twig.txt
 # edit in vim to get rid of everything but PR number, copy into clipboard
 for pr in $(xsel -ob); do firefox https://github.com/mozilla/rust/pull/$pr; sleep 0.07; done
 # wait a long time...

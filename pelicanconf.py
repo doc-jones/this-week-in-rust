@@ -7,11 +7,11 @@ import os
 TESTING_LOCALLY = False
 USE_EMAIL_THEME = True if os.environ.get('USE_EMAIL_THEME') == '1' else False
 
-AUTHOR = u'TWiR Contributors'
+AUTHOR = u'TWiG Contributors'
 SITENAME = u"This Week in GraphQL"
 SITEURL = 'https://this-week-in-graphql.org' if not TESTING_LOCALLY else 'http://localhost:8000'
 
-SOURCE_URL = 'https://github.com/doc-jones/this-week-in-graphql'
+SOURCE_URL = 'https://github.com/doc-jones/twig'
 
 if USE_EMAIL_THEME:
     THEME = 'themes/newsletter'

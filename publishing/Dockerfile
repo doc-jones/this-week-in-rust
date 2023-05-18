@@ -1,7 +1,7 @@
 FROM ubuntu:20.04
 
-# Must run from base TWIR directory... makefile takes care of this.
-WORKDIR /usr/twir
+# Must run from base TWiG directory... makefile takes care of this.
+WORKDIR /usr/twig
 
 RUN apt-get update
 RUN apt-get install -qq -y curl python3.8 python3-pip language-pack-en

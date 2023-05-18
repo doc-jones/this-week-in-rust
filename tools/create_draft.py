@@ -131,10 +131,10 @@ def create_draft(date):
         events_list = EVENTS_LIST_PLACEHOLDER
 
     params = {
-        'twir_issue_number': compute_issue_number(date),
-        'twir_issue_date': date.isoformat(),
-        'twir_events_end_date': end_date.isoformat(),
-        'twir_events_list': events_list,
+        'twig_issue_number': compute_issue_number(date),
+        'twig_issue_date': date.isoformat(),
+        'twig_events_end_date': end_date.isoformat(),
+        'twig_events_list': events_list,
     }
 
     template_path = get_template_path()
