@@ -1,0 +1,46 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+env:
+  PIP_DISABLE_PIP_VERSION_CHECK: "1"
+  PIP_NO_PYTHON_VERSION_WARNING: "1"
+
+jobs:
+  list:
+    runs-on: ubuntu-latest
+    outputs:
+      noxenvs: ${{ steps.noxenvs-matrix.outputs.noxenvs }}
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up nox
+        uses: wntrblm/nox@2023.04.22
+      - id: noxenvs-matrix
+        run: |
+          echo >>$GITHUB_OUTPUT noxenvs=$(
+            nox --list-sessions |
+            grep '^* ' |
+            cut -d ' ' -f 2- |
+            jq --raw-input --slurp 'split("\n") | map(select(. != ""))'
+          )
+
+  ci:
+    needs: list
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        noxenv: ${{ fromJson(needs.list.outputs.noxenvs) }}
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+      - name: Set up nox
+        uses: wntrblm/nox@2023.04.22
+      - name: Run nox
+        run: nox
