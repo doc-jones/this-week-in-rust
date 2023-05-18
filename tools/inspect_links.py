@@ -230,7 +230,7 @@ def get_recent_files(dirs, count):
         if not files:
             raise Exception(f'No files found in {dir}')
         files = list(filter(RE_FILENAME.match, files))
-        if not files:
+        if not files and dir != "draft":
             raise Exception(f'No matching files found in {dir}')
 
         # create a tuple (file, file+path) so we can sort by filename
