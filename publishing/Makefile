@@ -52,20 +52,22 @@ clean:
 	rm -rf output/
 
 generate-website: clean
+	mkdir output/
 	docker run -it \
-		-v $(shell pwd)/output:/usr/twig/output \
-		twig:latest 
+		-v $(shell pwd)/output:/usr/src/myapp/output \
+		twig:latest
 
 generate-email: clean
+	mkdir output/
 	docker run -it \
 		-e USE_EMAIL_THEME=1 \
-		-v $(shell pwd)/output:/usr/twig/output \
+		-v $(shell pwd)/output:/usr/src/myapp/output \
 		twig:latest
 
 host-content:
 	docker run -it \
 		-p 8000:8000 \
-	 	-v $(shell pwd)/output:/usr/twig/output:ro \
+	 	-v $(shell pwd)/output:/usr/src/myapp/output:ro \
 		-it \
 		twig:latest \
 		bash run_server.sh
@@ -76,6 +78,6 @@ optimize-email:
 	mkdir juice
 	curl ${BLOG_DOWNLOAD} > juice/in.html
 	docker run \
-		-v $(shell pwd)/juice:/usr/twig/juice \
+		-v $(shell pwd)/juice:/usr/src/myapp/juice \
 		twig:latest \
 		bash create_html_friendly_page.sh
