@@ -1,25 +1,16 @@
-FROM ubuntu:20.04
+FROM python:3.11
 
-# Must run from base TWIR directory... makefile takes care of this.
-WORKDIR /usr/twir
+WORKDIR /usr/src/myapp
 
-RUN apt-get update
-RUN apt-get install -qq -y curl python3.8 python3-pip language-pack-en
+RUN apt-get update && apt-get install -qq -y nodejs npm
 
-# pelican+friends
-ENV LANG='en_US.UTF-8'
-ENV LC_ALL='en_US.UTF-8'
-RUN ln -s /usr/bin/python3.8 /usr/bin/python
-COPY requirements.txt .
-RUN pip3 install -r requirements.txt
 RUN curl https://files.stork-search.net/releases/v1.5.0/stork-ubuntu-20-04 -o stork \
     && chmod +x stork \
-    && mv ./stork /usr/bin/stork
+    && mv ./stork /usr/local/bin/stork
 
-# sass/juice
-RUN apt-get install -y curl
-RUN curl -sL https://deb.nodesource.com/setup_14.x | bash -
-RUN apt-get install -y nodejs
+COPY requirements.txt ./
+RUN pip install -r requirements.txt
+
 RUN npm install -g sass
 RUN npm install -g juice
 

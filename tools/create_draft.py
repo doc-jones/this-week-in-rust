@@ -46,7 +46,7 @@ def default_draft_path():
 
 def issue_filename(date):
     """ Compute the issue filename, given the date. """
-    return date.isoformat() + '-this-week-in-rust.md'
+    return date.isoformat() + '-this-week-in-graphql.md'
 
 
 def default_date():
@@ -93,8 +93,8 @@ def read_previous_issue(date):
 def read_previous_events(date):
     """ Attempt to copy the events list from the previous issue. """
 
-    EVENTS_START = 'Rusty Events between'
-    EVENTS_END = 'If you are running a Rust event'
+    EVENTS_START = 'GraphQL Events between'
+    EVENTS_END = 'If you are running a GraphQL event'
 
     previous_issue = read_previous_issue(date)
     events_list = ''
@@ -131,10 +131,10 @@ def create_draft(date):
         events_list = EVENTS_LIST_PLACEHOLDER
 
     params = {
-        'twir_issue_number': compute_issue_number(date),
-        'twir_issue_date': date.isoformat(),
-        'twir_events_end_date': end_date.isoformat(),
-        'twir_events_list': events_list,
+        'twig_issue_number': compute_issue_number(date),
+        'twig_issue_date': date.isoformat(),
+        'twig_events_end_date': end_date.isoformat(),
+        'twig_events_list': events_list,
     }
 
     template_path = get_template_path()
@@ -165,7 +165,7 @@ def main():
         date = default_date()
     LOG.debug(f'issue date {date}')
 
-    # Create the draft filename: draft/YYYY-MM-DD-this-week-in-rust.md
+    # Create the draft filename: draft/YYYY-MM-DD-this-week-in-graphql.md
     if args.draft_path:
         draft_path = args.draft_path
     else:

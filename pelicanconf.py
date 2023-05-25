@@ -7,11 +7,11 @@ import os
 TESTING_LOCALLY = False
 USE_EMAIL_THEME = True if os.environ.get('USE_EMAIL_THEME') == '1' else False
 
-AUTHOR = u'TWiR Contributors'
-SITENAME = u"This Week in Rust"
-SITEURL = 'https://this-week-in-rust.org' if not TESTING_LOCALLY else 'http://localhost:8000'
+AUTHOR = u'TWiG Contributors'
+SITENAME = u"This Week in GraphQL"
+SITEURL = 'https://this-week-in-graphql.org' if not TESTING_LOCALLY else 'http://localhost:8000'
 
-SOURCE_URL = 'https://github.com/rust-lang/this-week-in-rust'
+SOURCE_URL = 'https://github.com/doc-jones/twig'
 
 if USE_EMAIL_THEME:
     THEME = 'themes/newsletter'
@@ -42,10 +42,19 @@ ARCHIVES_SAVE_AS = 'blog/archives/index.html'
 CATEGORY_URL = 'categories/{slug}/'
 CATEGORY_SAVE_AS = 'categories/{slug}/index.html'
 
+# TODO: REPLACEME
+LOGO_32_URL = "https://this-week-in-rust.org/images/logo32.png"
+FAVICON_32_URL = "https://www.rust-lang.org/static/images/favicon-32x32.png"
+FAVICON_SVG_URL = "https://www.rust-lang.org/static/images/favicon.svg"
+SAFARI_PINNED_TAB_URL = "https://www.rust-lang.org/static/images/safari-pinned-tab.svg"
+FORM_SUBSCRIBE_URL = "//this-week-in-rust.us11.list-manage.com/subscribe/post?u=fd84c1c757e02889a9b08d289&amp;id=0ed8b72485"
+TWITTER_USERNAME = "ThisWeekInRust"
+PRIVACY_POLICY_URL = "https://this-week-in-graphql.org/pages/privacy-policy.html"
+
 LANDING_PAGE_ABOUT = {
-        "title": "Cataloging the Rust community's awesomeness",
+        "title": "Cataloging the GraphQL community's awesomeness",
         "details": """
-A weekly newsletter about Rust and the Rust community, with bonus content
+A weekly newsletter about GraphQL and the GraphQL community, with bonus content
 scattered about.
 """
 }

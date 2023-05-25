@@ -1,6 +1,6 @@
-Title: This Week in GraphQL $twig_issue_number
-Number: $twig_issue_number
-Date: $twig_issue_date
+Title: This Week in GraphQL 496
+Number: 496
+Date: 2023-05-24
 Category: This Week in GraphQL
 
 Hello and welcome to another issue of *This Week in GraphQL*!
@@ -67,9 +67,9 @@ Some of these tasks may also have mentors available, visit the task page for mor
 
 ## Upcoming Events
 
-GraphQL Events between $twig_issue_date - $twig_events_end_date
+GraphQL Events between 2023-05-24 - 2023-06-21
 
-$twig_events_list
+<!-- Events list goes here -->
 
 # Quote of the Week
 

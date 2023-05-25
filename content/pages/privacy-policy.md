@@ -3,7 +3,7 @@ Date: 2015-07-08
 
 Last updated: 9 April, 2019
 
-TWiR team ("us", "we", or "our") operates the <a href="http://this-week-in-rust.org/">This Week in Rust</a> website (the "Service").
+TWiG team ("us", "we", or "our") operates the <a href="http://this-week-in-graphql.org/">This Week in GraphQL</a> website (the "Service").
 
 This page informs you of our policies regarding the collection, use and disclosure of Personal Information when you use our Service.
 
@@ -21,7 +21,7 @@ We collect this information for the purpose of providing the Service, identifyin
 
 We may employ third party companies and individuals to facilitate our Service, to provide the Service on our behalf, to perform Service-related services and/or to assist us in analyzing how our Service is used.
 
-Following third-party services have access to your Personal Information: MailChimp, used for managing and delivering the newsletter; GitHub, used to host this-week-in-rust.org's web page.
+Following third-party services have access to your Personal Information: MailChimp, used for managing and delivering the newsletter; GitHub, used to host this-week-in-graphql.org's web page.
 
 [MailChimp's privacy policy](https://mailchimp.com/legal/privacy/#3._Privacy_for_Contacts).
 
